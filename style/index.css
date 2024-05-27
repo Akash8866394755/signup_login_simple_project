@@ -1,0 +1,131 @@
+::placeholder {
+    color: #d3cdcd;
+}
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+#container {
+    min-height: 100vh;
+    background: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    box-shadow: 0 0 10px 0 #ddd;
+    padding: 6px 24px;
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+
+}
+#menu button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 700;
+    background: dodgerblue;
+    box-shadow: 0 0 10px 0 #ddd;
+}
+#signup-main {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 12px;
+    gap: 20px;
+    box-shadow: 0 0 10px 0 #ddd;
+    border-radius: 3px;
+}
+#login-main {
+    display: none;
+    flex-direction: column;
+    width: 700px;
+    box-shadow: 0 0 10px 0 #ddd;
+    border-radius: 3px;
+    padding: 12px;
+    gap: 20px;
+
+}
+#img-form-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    
+
+}
+#card {
+    flex-grow: 1;
+}
+#card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;    
+    /* background: red; */
+    margin-top: 12px;
+}
+#group-field {
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    
+}
+#group-field input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#signup-btn, #login-btn {
+    width: fit-content;
+    padding: 5px 16px;
+    cursor: pointer;
+    background: #ff1493;
+    border: none;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#title h4 {
+    color: deeppink;
+    padding: 0;
+    margin: 0;
+    padding: 12px 0;
+    text-align: center;
+}
+#password-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#password-field input {
+    flex-grow: 1;
+}
+#password-field button {
+    border: none;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    cursor: pointer;
+    background: transparent;
+}
+#password-field button i {
+    color: #323232;
+}
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div id="menu">
+                <button id="signup" onclick="showDialogue('signup-main', 'login-main')">Signup</button>
+                <button id="login" onclick="showDialogue('login-main', 'signup-main')">Login</button>
+            </div>
+        </nav>           
+        <!-- signup -->
+        <div id="signup-main" class="animate__animated animate__fadeIn">
+            <div id="title">
+                <h4>Register Now</h4>
+                
+            </div>
+            <div id="img-form-container">
+                <div>
+                    <img src="images/signup-image.png" alt="" height="235">
+                </div>
+                <div id="card">
+                    <form>
+                        <div id="group-field">
+                            <label>FullName</label>
+                            <input type="text" name="fullname" placeholder="abc" />
+                        </div>
+                        <div id="group-field">
+                            <label>Email</label>
+                            <input type="text" name="email" placeholder="example@gmaail.com" />
+                        </div>
+                        <div id="group-field">
+                            <label>Password</label>
+                            <div id="password-field">
+                                <input type="password" name="Password" id="password-input" placeholder="*********" />
+                                <button type="button" id="eye-btn">
+                                    <i class="fa fa-eye" id="eye-icon"></i>
+                                </button>
+
+                            </div>
+                            
+                        </div>
+                        <button type="button" id="signup-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- login -->
+        <div id="login-main">
+            <div id="title">
+                <h4>Login Now</h4>
+                
+            </div>
+            <div id="img-form-container">
+                <div>
+                    <img src="images/login-image.png" alt="" width="350">
+                </div>
+                <div id="card">
+                    <form>
+                       
+                        <div id="group-field">
+                            <label>Email</label>
+                            <input type="text" name="email" placeholder="example@gmaail.com">
+                        </div>
+                        <div id="group-field">
+                            <label>Password</label>
+                            <input type="text" name="Password" placeholder="*********">
+                        </div>
+                        <button type="button" id="login-btn">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
